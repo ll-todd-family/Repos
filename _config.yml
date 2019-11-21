@@ -49,6 +49,8 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - categories.html
+  - tags.html
   - .git-metadata/
 sass:
   style: compressed
