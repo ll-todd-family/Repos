@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/{{css}}"> {% endif %} {% endfor %} {% for css in page.css %} {% if css contains "//" %}
     <link rel="stylesheet" href="{{css}}"> {% else %}
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/{{css}}"> {% endif %} {% endfor %}
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/syntax.css">
-    <link rel="stylesheet" href="{{site.baseurl/assets/css/tags.css">
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/categories.css"> {% feed_meta %}
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/syntax.css"> {% feed_meta %}
     <link rel="sitemap" type="application/xml" title="Sitemap" href="{{site.baseurl}}/sitemap.xml"> {% seo title=false %}
 </head>
 
