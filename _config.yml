@@ -49,6 +49,7 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - .git-metadata/
 sass:
   style: compressed
 future: true
