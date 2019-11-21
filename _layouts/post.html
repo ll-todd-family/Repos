@@ -1,4 +1,5 @@
---- layout: default css: ["post.css"] js: ["post.js"] --- {% for author in site.data.authors[author] %}
+--- layout: default css: ["post.css"] js: ["post.js"] ---
+
 <div id="post-info">
     <h3>{{page.title}}</h3>
     <ul class="collapsible hoverable" data-collapsible="accordion">
@@ -11,6 +12,13 @@
         </span>
             </div>
             <div class="collapsible-body">
+                <span>
+          <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Categories">sort</i>
+          {% for page in site.data.authors[author] %}
+          ![{{page.author.name}}]("{{page.author.image}}")
+          [{{page.author.name}}]("{{page.author.github}}")
+          {% endfor %}
+        </span>
             </div>
         </li>
     </ul>
