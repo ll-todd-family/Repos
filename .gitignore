@@ -2,5 +2,6 @@
 *.gem
 .bundle
 .sass-cache
+.git-metadata
 _site
 Gemfile.lock
