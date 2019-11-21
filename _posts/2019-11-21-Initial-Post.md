@@ -2,8 +2,7 @@
 layout: post
 title:  "Initial Post"
 date:   2019-11-21 14:11:00 -0700
-categories: default
-tags: test
+author: administrator
 ---
 Just an initial test post.
 
