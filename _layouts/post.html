@@ -17,10 +17,10 @@ js: ["post.js"]
             </div>
             <div class="collapsible-body">
                 <span>
-          <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Categories">sort</i>
-          {% for page in site.data.authors[author] %}
-          ![{{page.author.name}}]("{{page.author.image}}")
-          [{{page.author.name}}]("{{page.author.github}}")
+          <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Face">sort</i>
+          {% for author in site.data.authors[author] %}
+          <img src="{{page.author.image}}" alt="{{page.author.name}}">  
+          <a href="{{page.author.github}}">{{page.author.name}}</a>
           {% endfor %}
         </span>
             </div>
