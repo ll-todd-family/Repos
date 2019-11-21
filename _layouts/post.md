@@ -1,4 +1,8 @@
---- layout: default css: ["post.css"] js: ["post.js"] ---
+---
+layout: default
+css: ["post.css"]
+js: ["post.js"]
+---
 
 <div id="post-info">
     <h3>{{page.title}}</h3>
