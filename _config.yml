@@ -35,8 +35,12 @@ disqus_shortname: ""
 feed:
   excerpt_only: true
 
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+
 # Build settings
-markdown: kramdown
+markdown: CommonMarkGhPages
 plugins:
   - jekyll-feed
   - jekyll-paginate
