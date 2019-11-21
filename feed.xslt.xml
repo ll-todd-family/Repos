@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:transform version="1.0" 
+  xmlns:a="http://www.w3.org/2005/Atom" 
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:strip-space elements="*"/>
+  <xsl:output method="text"/>
+  <xsl:template match="*"/>
+  <xsl:template match="a:feed">
+    <xsl:text>&#10;</xsl:text>
+    <xsl:text> Feed Title: </xsl:text><xsl:value-of select="a:title"/><xsl:text>&#10;</xsl:text>
+    <xsl:text>      About: </xsl:text><xsl:value-of select="a:subtitle"/><xsl:text>&#10;</xsl:text>
+    <xsl:text>   Feed URL: </xsl:text><xsl:value-of select="a:id"/><xsl:text>&#10;</xsl:text>
+    <xsl:text>Site Author: </xsl:text><xsl:value-of select="a:author"/><xsl:text>&#10;</xsl:text>
+    <xsl:text>    Updated: </xsl:text><xsl:value-of select="a:updated"/><xsl:text>&#10;</xsl:text>
+    <xsl:text>&#10;</xsl:text>
+    <xsl:apply-templates/>
+  </xsl:template>
+  <xsl:template match="a:entry">
+    <xsl:text>  ----------------------------------------&#10;</xsl:text>
+    <xsl:text>      Title: </xsl:text><xsl:value-of select="a:title"/><xsl:text>&#10;</xsl:text>
+    <xsl:text>Post Author: </xsl:text><xsl:value-of select="a:author"/><xsl:text>&#10;</xsl:text>
+    <xsl:text>  Published: </xsl:text><xsl:value-of select="a:published"/><xsl:text>&#10;</xsl:text>
+    <xsl:text>    Excerpt: </xsl:text><xsl:value-of select="a:summary"/><xsl:text>&#10;</xsl:text>
+    <xsl:text>       Link: </xsl:text><xsl:value-of select="a:id"/> <xsl:text>&#10;</xsl:text> 
+     <xsl:text>  ----------------------------------------&#10;</xsl:text>
+    <xsl:apply-templates/>
+  </xsl:template>
+</xsl:transform>
