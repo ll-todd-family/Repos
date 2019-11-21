@@ -20,6 +20,7 @@ url: "https://ll-todd-family.github.io"
 permalink: /:year/:month/:day/:title
 repository: ll-todd-family/Repos
 paginate: 5
+timezone: America/Phoenix
 
 # MatJek specific configurations
 github_profile: "https://github.com/ll-todd-family"
