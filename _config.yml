@@ -21,6 +21,7 @@ permalink: /:year/:month/:day/:title
 repository: ll-todd-family/Repos
 paginate: 5
 timezone: America/Phoenix
+css: "assets/css/""
 
 # MatJek specific configurations
 github_profile: "https://github.com/ll-todd-family"
