@@ -1,4 +1,7 @@
---- layout: default css: ["page.css"] ---
+--- 
+layout: default 
+css: ["page.css"] 
+---
 <div id="page-info">
     <h3>{{page.title}}</h3>
 </div>
