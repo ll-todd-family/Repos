@@ -12,6 +12,10 @@ css: ["index.css"]
           <i class="material-icons">date_range</i>
           {{post.date | date_to_rfc822}}
         </p>
+        <p id="post-author">
+          <i class="material-icons">face</i>
+          {{post.author}}
+        </p>
         <p id="post-content">{{post.excerpt | remove: '<p>' | remove: '</p>'}}</p>
       </div>
       <div class="card-action">
