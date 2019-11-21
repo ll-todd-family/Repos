@@ -24,6 +24,8 @@ timezone: America/Phoenix
 
 # MatJek specific configurations
 github_profile: "https://github.com/ll-todd-family"
+github_api_key: "db881daee34c3bebee1694bbb81a4be468a7fa2b"
+github_api: "db881daee34c3bebee1694bbb81a4be468a7fa2b"
 user: "ll-todd-family"
 author: "Family Administrator"
 user_email: "administrator@lltodd.family"
