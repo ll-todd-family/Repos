@@ -7,13 +7,13 @@ css: ["index.css"]
   <div class="col s12">
     <div class="card hoverable">
       <div class="card-content">
-        <span id="post-title" class="card-title">{{post.title}} by {{post.author}}</span>
+        <span id="post-title" class="card-title">{{post.title}}</span>
         <p id="post-date">
           <i class="material-icons">date_range</i>
           {{post.date | date_to_rfc822}}
         </p>
         <p id="post-author">
-          <i class="material-icons">face</i>
+          <i class="material-icons" style="vertical-align: middle">face</i>
           {{post.author}}
         </p>
         <p id="post-content">{{post.excerpt | remove: '<p>' | remove: '</p>'}}</p>
