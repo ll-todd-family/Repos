@@ -10,20 +10,17 @@ js: ["post.js"]
         <li>
             <div class="collapsible-header">
                 <span>
-          <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Date">date_range</i>
-          {{page.date | date_to_rfc822}}
-          <i id="indicate" class="right material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Show extra info">info</i>
-          {{page.author.name}}
-        </span>
+                    <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Date">date_range</i>
+                    {{page.date | date_to_rfc822}}
+                    <i id="indicate" class="right material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Show extra info">info</i>
+                </span>
             </div>
             <div class="collapsible-body">
                 <span>
-                  {% for post in site.posts}
                   <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Author" style="vertical-align: middle">face</i>
-                  {{post.author.name}}<br>
+                  {{page.author}}
                   <i class="material-icons tooltipped" data-position="left" data-deplay="30" data-tooltip="Github" style="vertical-align: middle">person</i>
-                  {{page.author.github}}
-                  {% endfor %}
+                  <a href="https://github.com/{{page.github}}">https://github.com/{{page.github}}</a>                  {% endfor %}
                 </span>
             </div>
         </li>
