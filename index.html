@@ -15,8 +15,8 @@ css: ["index.css"]
           {{post.author}}
         </p>
         <p id="post-content">
-          <i class="material-icons" style="vertical-align: middle">notification</i>
-          {{post.excerpt | remove: '<p>' | remove: '</p>'}}</p>
+          {{post.excerpt | remove: '<p>' | remove: '</p>'}}
+        </p>
       </div>
       <div class="card-action">
         <a href="{{post.url | prepend: site.baseurl}}">
