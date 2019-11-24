@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: LL Todd Family GIT Repositories
 description: Main repo & project site for the LL Todd Family.
-baseurl: ""
+baseurl: "/"
 url: "https://git.lltodd.family"
 permalink: /:year/:month/:day/:title
 repository: ll-todd-family/Repos
